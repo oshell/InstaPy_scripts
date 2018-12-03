@@ -31,9 +31,9 @@ try:
 				    max_following=10000,
 				     min_followers=50,
 				      min_following=0)
-    session.set_do_comment(False, percentage=10)
-    session.set_comments([':)', 'xoxo', 'nice'])
-    session.set_do_follow(enabled=True, percentage=20, times=1)
+    session.set_do_comment(True, percentage=20)
+    session.set_comments([u"🔥🔥🔥",u"😎😎😎", u"😋🎉", "😀🍬", u"😂👏🏼👏🏼", u"🚀🎊🎊🎊", u"😁😁😁",  u"🎉",  u"😎", u"🤓🤓🤓", u"👏🏼😉"])
+    session.set_do_follow(enabled=True, percentage=40, times=1)
     session.unfollow_users(amount=25, InstapyFollowed=(True, "all"), style="FIFO", unfollow_after=4*24*60*60, sleep_delay=501)
     session.set_dont_like([])
 
@@ -43,10 +43,10 @@ try:
 'music',
 'housemusic',
 'dancemusic',
-'edm', 
+'edm',
 'electronicmusic',
-'instamusic', 
-'instalove', 
+'instamusic',
+'instalove',
 'nowplaying',
 'katermukke',
 'engtanz',
@@ -79,4 +79,3 @@ except Exception as exc:
 finally:
     # end the bot session
     session.end()
-
