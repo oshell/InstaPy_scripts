@@ -33,9 +33,8 @@ try:
 				      min_following=0)
     session.set_do_comment(True, percentage=20)
     session.set_comments([u"🔥🔥🔥",u"😎😎😎", u"😋🎉", "😀🍬", u"😂👏🏼👏🏼", u"🚀🎊🎊🎊", u"😁😁😁",  u"🎉",  u"😎", u"🤓🤓🤓", u"👏🏼😉"])
-    session.set_do_follow(enabled=True, percentage=40, times=1)
-    session.unfollow_users(amount=25, InstapyFollowed=(True, "all"), style="FIFO", unfollow_after=4*24*60*60, sleep_delay=501)
-    session.set_dont_like([])
+    session.set_do_follow(enabled=True, percentage=20, times=1)
+    session.unfollow_users(amount=50, InstapyFollowed=(True, "all"), style="FIFO", unfollow_after=4*24*60*60, sleep_delay=501)
 
     # actions
     session.like_by_tags([
